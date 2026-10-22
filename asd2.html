@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Tábla</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+	body {
+  background: #111;
+  color: #eaeaea;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+  
+	  .logo-container{
+		  position: relative;
+		  top: -10vh;
+		  margin: 0 auto;
+		  width: 400px;
+		  height: 180px;
+		  background-image: url("logo41.PNG");
+		  background-size: cover; 
+		  padding: 60px;
+		  z-index: -1;
+	  }
+	  .background1{
+		    position: fixed;
+			width: 100vw;
+			height: 100vh;
+		    background-image: url("background.jpg");
+			background-size: cover;
+			z-index: -1;
+		    opacity: 0.1;
+		    top: 0;
+
+		}
+
+.menu-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  top: -25vh;
+
+}
+
+.column {
+  flex: 1;
+  min-width: 200px;
+  margin: 30px;
+  
+}
+
+h2, h3 {
+  color: #0CA7AF;
+  margin-bottom: 0.5rem;
+}
+
+h2 span {
+  display: block;
+  font-size: 0.9em;
+  color: #ddd;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2em;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #333;
+  padding: 0.3rem 0;
+	
+}
+
+li span {
+  color: #fff;
+ 
+}
+
+.red {
+  color: #ff4d4d;
+}
+
+.static {
+  color: #ff6b6b;
+}
+
+.frozen {
+  color: #66ccff;
+}
+
+	
+li span {
+  color: #ccc;
+  font-size: 0.9em;
+}
+
+	  .gram{
+		  position: absolute;
+		  top: 0;
+		  right: -50px;
+		  font-size: 0.9rem;
+		  color: white;
+		  
+	  }
+	</style>
+</head>
+<body>
+	<div class="logo-container"></div>
+		
+  <div class="menu-container">
+    <div class="column">
+      <h2>Weed<br><span>Indica/Hybrid</span></h2>
+		
+	  
+  <ul>
+  <li>White Widow <span>11€ /  45€</span></li>
+  <li>Purple Magic <span> 12€ / 50€</span></li>
+  <li>Strawberry Tropical <span>12€ /  60€</span></li>
+</ul>
+
+      <h3>Weed Sativa</h3>
+      <ul>
+        <li>Jungle Haze <span>10 / 50</span></li>
+        <li>Monkey Haze <span>10 / 50</span></li>
+        <li>Lemon Haze <span>11 / 50</span></li>
+        <li>Amnesia Haze <span>11 / 50</span></li>
+      </ul>
+
+      <h3>California Exclusive</h3>
+      <ul>
+        <li>Gummies <span>20 / 100</span></li>
+        <li>Blueberry Pancake <span>20 / 100</span></li>
+        <li>Orange Cake Gelato <span>20 / 100</span></li>
+        <li>Cherry Bomb <span>20 / 100</span></li>
+      </ul>
+
+      <h3>Edibles</h3>
+      <ul>
+        <li>Brownie <span>5</span></li>
+        <li>Cake <span>8</span></li>
+        <li>Candy <span>5</span></li>
+        <li>Choco Bar Nutella <span class="red">10</span></li>
+        <li>Choco Bar Pistachio <span>50</span></li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <h2>Hash</h2>
+      <ul>
+        <li>White Choco <span>6 / 30</span></li>
+        <li>Super Polm <span>7 / 35</span></li>
+        <li>Ketama <span>8 / 40</span></li>
+        <li>Ice o Lator <span>10 / 50</span></li>
+        <li>Honing <span>12 / 60</span></li>
+        <li>King Hassan <span>15 / 75</span></li>
+        <li class="static">Snoop Dogg (Static) <span>15 / 75</span></li>
+        <li class="frozen">Tangerine Squeeze (Frozen) <span>20 / 100</span></li>
+      </ul>
+
+      <h3>Joints Indica</h3>
+      <ul>
+        <li>White Widow <span>4 / 20</span></li>
+        <li>Puur Joint <span>6 / 25</span></li>
+        <li>Party Joint <span>6 / 25</span></li>
+        <li>Granddaddy Purple Joint <span>7 / 35</span></li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <h2>Wiet Experiment</h2>
+      <ul>
+        <li>Black Cherry <span>8 / 40</span></li>
+        <li>New York Diesel <span>9 / 45</span></li>
+        <li>Sky Walker Kush <span>9 / 45</span></li>
+        <li>Wedding Cake <span>10 / 50</span></li>
+        <li>Super Silver Haze <span>11 / 55</span></li>
+        <li>Exodus Cheese <span>11 / 55</span></li>
+        <li>Gelato #41 <span>13 / 65</span></li>
+      </ul>
+
+      <h3>Hash</h3>
+      <ul>
+        <li>Tradit Hasj Silver <span>6 / 30</span></li>
+        <li>Amnesia Dry Sift <span>10 / 60</span></li>
+      </ul>
+
+      <h3>Joints</h3>
+      <ul>
+        <li>Selection Indica <span>4</span></li>
+        <li>Selection Sativa <span>4</span></li>
+        <li>Super Silver Haze <span>5</span></li>
+      </ul>
+    </div>
+	  
+	  
+  </div>
+	<div class="background1"></div>
+</body>
+</html>
